@@ -21,11 +21,11 @@ pub struct CrossChainConfig {
     #[arg(long = "cross-chain-max-retries", default_value = "10")]
     pub(crate) max_retries: u32,
 
-    /// Delay before retrying of cross-chain message.
+    /// Delay before retrying a cross-chain message.
     #[arg(long = "cross-chain-retry-delay-ms", default_value = "2000")]
     pub(crate) retry_delay_ms: u64,
 
-    /// Introduce a delay before sending every cross-chain message (e.g. for testing purpose).
+    /// Introduce a delay before sending every cross-chain message (e.g. for testing purposes).
     #[arg(long = "cross-chain-sender-delay-ms", default_value = "0")]
     pub(crate) sender_delay_ms: u64,
 
